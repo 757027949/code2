@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="left_menu_fouse">@android:color/transparent</color>
+    <color name="left_menu_foused">#e5e5e5</color>
+
+    <color name="color_bak">#EEEEEE</color>
+    <color name="top_bar_bak">#7EBE8C</color>
+
+    <color name="gray">#B3B3B3</color>
+    <color name="green">#20903A</color>
+    <color name="green_light">#9520903A</color>
+    <color name="location_bak">#FF2626</color>
+
+    <color name="teacher_time_check">#CBCEDC</color>
+    <color name="home_menu_bak">#EEEFEF</color>
+
+    <!--<color name="green">#21903A</color>-->
+
+    <color name="bak_gray">#F2F2F2</color>
+    <color name="right_fragment_bak">#797979</color>
+
+    <color name="home_convenient_item_bak">#F9F9F9</color>
+</resources>

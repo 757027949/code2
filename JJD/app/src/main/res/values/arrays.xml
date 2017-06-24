@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sign_up_info_items">
+        <item>建档费</item>
+        <item>入学费</item>
+        <item>材料费</item>
+        <item>其他费</item>
+    </string-array>
+
+    <string-array name="update_user_info_sex">
+        <item>男</item>
+        <item>女</item>
+        <!--<item>保密</item>-->
+    </string-array>
+    <string-array name="update_user_info_status">
+        <item>单身</item>
+        <item>恋爱中</item>
+        <item>已婚</item>
+        <item>离婚</item>
+        <item>丧偶</item>
+    </string-array>
+    <string-array name="update_user_info_constellation">
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+    </string-array>
+    <string-array name="community_college">
+        <item>学车星秀</item>
+        <item>天天趣看</item>
+        <item>吐槽树洞</item>
+        <item>勾搭我吧</item>
+    </string-array>
+</resources>

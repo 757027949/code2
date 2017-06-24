@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/library/Common/Common.iml" filepath="$PROJECT_DIR$/library/Common/Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JJDT.iml" filepath="$PROJECT_DIR$/JJDT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/WheelPicker/WheelPicker.iml" filepath="$PROJECT_DIR$/library/WheelPicker/WheelPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asdutil/asdutil.iml" filepath="$PROJECT_DIR$/asdutil/asdutil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh-layout/refresh-layout.iml" filepath="$PROJECT_DIR$/refresh-layout/refresh-layout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweet-alert-dialog/sweet-alert-dialog.iml" filepath="$PROJECT_DIR$/sweet-alert-dialog/sweet-alert-dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/update_library/update_library.iml" filepath="$PROJECT_DIR$/update_library/update_library.iml" />
+    </modules>
+  </component>
+</project>

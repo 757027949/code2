@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="35px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/idea_hint_one"
+            android:textColor="@color/green"
+            android:textSize="35px" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/theme"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/edit_bak"
+            android:hint="@string/idea_hint_two"
+            android:inputType="text"
+            android:maxLength="25"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:singleLine="true"
+            android:textColor="#e0e1ea"
+            android:textColorHint="#e0e1ea"
+            android:textSize="30px"
+            app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/mes"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/edit_bak"
+            android:gravity="top|left"
+            android:hint="@string/idea_hint_three"
+            android:inputType="text"
+            android:maxLength="255"
+            android:padding="20px"
+            android:textColor="#e0e1ea"
+            android:textColorHint="#e0e1ea"
+            android:textSize="30px"
+            app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginTop="20px"
+            android:text="@string/idea_hint_four"
+            android:textColor="#e0e1ea"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@drawable/button_bak"
+            android:text="@string/txt_commit"
+            android:textColor="@android:color/white"
+            android:textSize="35px" />
+
+        <!--<RatingBar
+            android:id="@+id/room_ratingbar"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5">
+        </RatingBar>
+
+        <com.hedgehog.ratingbar.RatingBar
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:starCount="5"
+            app:clickable="true"
+            app:starEmpty="@mipmap/ic_star_empty"
+            app:starFill="@mipmap/ic_star_fill"
+            app:starImageSize="50px"
+            />-->
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

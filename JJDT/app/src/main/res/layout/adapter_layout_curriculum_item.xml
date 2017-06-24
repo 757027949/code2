@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rel_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="0">
+
+            <ImageView
+                android:id="@+id/hint_image"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="10px"
+                android:src="@drawable/ic_time" />
+
+            <!-- <TextView
+                 android:id="@+id/time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@+id/hint_image"
+                 android:gravity="center_horizontal"
+                 android:layout_centerVertical="true"
+                 android:lineSpacingExtra="-10px"
+                 android:textSize="30px"
+                 android:text="7:00\n—\n8:00" />-->
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hint_image"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/time_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7:00"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="20px"
+                    android:layout_height="1dp"
+                    android:background="#50000000" />
+
+                <TextView
+                    android:id="@+id/time_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8:00"
+                    android:textSize="30px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/option_status" />
+
+        <ImageView
+            android:id="@+id/item_one"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:src="@drawable/ic_teacher_bespeak_bak"
+            android:visibility="invisible"
+            app:layout_auto_basewidth="margin" />
+
+
+        <ImageView
+            android:id="@+id/item_two"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:src="@drawable/ic_teacher_bespeak_bak"
+            android:visibility="invisible"
+            app:layout_auto_basewidth="margin" />
+
+
+        <ImageView
+            android:id="@+id/item_three"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:src="@drawable/ic_teacher_bespeak_bak"
+            android:visibility="invisible"
+            app:layout_auto_basewidth="margin" />
+
+
+        <ImageView
+            android:id="@+id/item_four"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:src="@drawable/ic_teacher_bespeak_bak"
+            android:visibility="invisible"
+            app:layout_auto_basewidth="margin" />
+
+
+        <!--<ImageView
+            android:layout_width="110px"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#D5D7E6" />-->
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

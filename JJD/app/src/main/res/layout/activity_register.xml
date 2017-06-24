@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/register_edit_bak"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.andreabaccega.widget.FormEditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/register_phone_hint"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:textColor="#666"
+                android:textColorHint="#999"
+                android:textSize="27px"
+                app:customRegexp="[1][34578]\\d{9}"
+                app:emptyErrorString="@string/edittext_empty_error_txt"
+                app:testErrorString="@string/edittext_phone_error_txt"
+                app:testType="regexp" />
+
+            <Button
+                android:id="@+id/get_code"
+                android:layout_width="230px"
+                android:layout_height="80px"
+                android:background="@drawable/button_forget_pwd_get_code_bak"
+                android:text="获取验证码"
+                android:textColor="@android:color/white"
+                android:textSize="27px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#999" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@android:color/transparent"
+            android:hint="@string/register_code_hint"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="27px"
+            app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#999" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@android:color/transparent"
+            android:hint="@string/register_pwd_hint"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="27px"
+            app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:paddingTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="@string/register_pay_pwd_hint"
+            android:textColor="#999"
+            android:textSize="28px" />
+
+        <com.jungly.gridpasswordview.GridPasswordView
+            android:id="@+id/pay_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            app:gpvLineColor="#999" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+        <CheckBox
+            android:id="@+id/cb_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/register_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/cb_register"
+            android:padding="10px"
+            android:text="@string/register_check_mes"
+            android:textColor="@android:color/holo_blue_dark" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/button_bak"
+        android:text="注&#160;&#160;&#160;册"
+        android:textColor="@android:color/white"
+        android:textSize="35px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

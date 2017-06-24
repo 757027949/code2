@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- <item android:drawable="@color/gray" android:state_enabled="false" />
+     <item android:drawable="@color/yellow" />
+     <item android:drawable="@color/yellow_light" android:state_pressed="true" />-->
+
+    <item android:drawable="@drawable/ic_login_pwd_focuse" android:state_focused="false"></item>
+    <item android:drawable="@drawable/ic_login_pwd_focused" android:state_focused="true"></item>
+</selector>

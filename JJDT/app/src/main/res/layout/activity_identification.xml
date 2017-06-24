@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/top_bar_bak">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="教练认证"
+            android:textSize="40px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bak"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/error_mes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3px"
+                android:background="@android:color/white"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="10px"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="30px"
+                android:visibility="gone" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rel_school"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@android:color/white"
+                android:paddingLeft="80px"
+                android:paddingRight="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="选择驾校"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="150px"
+                    android:background="@drawable/identification_txt_bak"
+                    android:drawableRight="@drawable/ic_option"
+                    android:gravity="center_vertical"
+                    android:hint="请选择驾校"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:textColorHint="#e0e1ea"
+                    android:textSize="30px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rel_address"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="80px"
+                android:paddingRight="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="选择场地"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="150px"
+                    android:background="@drawable/identification_txt_bak"
+                    android:drawableRight="@drawable/ic_option"
+                    android:gravity="center_vertical"
+                    android:hint="请选择场地"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:textColorHint="#e0e1ea"
+                    android:textSize="30px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rel_number"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="80px"
+                android:paddingRight="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="教练证号"
+                    android:textSize="30px" />
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/et_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="150px"
+                    android:background="@drawable/edit_bak"
+                    android:gravity="center_vertical"
+                    android:hint="请输入教练证号"
+                    android:inputType="text"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:singleLine="true"
+                    android:textColor="#e0e1ea"
+                    android:textColorHint="#e0e1ea"
+                    android:textSize="30px"
+                    app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rel_name"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="80px"
+                android:paddingRight="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="真实姓名"
+                    android:textSize="30px" />
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="150px"
+                    android:background="@drawable/edit_bak"
+                    android:gravity="center_vertical"
+                    android:hint="请输入您的真实姓名"
+                    android:inputType="text"
+                    android:maxLength="4"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:singleLine="true"
+                    android:textColor="#e0e1ea"
+                    android:textColorHint="#e0e1ea"
+                    android:textSize="30px"
+                    app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="80px"
+                android:paddingRight="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;别"
+                    android:textSize="30px" />
+
+                <com.asd.android.widget.MyRadioGroup
+                    android:id="@+id/rbGroup_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="150px"
+                    android:orientation="horizontal">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:gravity="center_vertical"
+                            android:padding="20px"
+                            android:text="男"
+                            android:textSize="28px" />
+
+                        <RadioButton
+                            android:id="@+id/rb_woman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="20px"
+                            android:text="女"
+                            android:textSize="28px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.asd.android.widget.MyRadioGroup>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rel_identity"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="80px"
+                android:paddingRight="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="身&#160;&#160;份&#160;&#160;证"
+                    android:textSize="30px" />
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/et_identity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="150px"
+                    android:background="@drawable/edit_bak"
+                    android:gravity="center_vertical"
+                    android:hint="请输入身份证"
+                    android:inputType="text"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:singleLine="true"
+                    android:textColor="#e0e1ea"
+                    android:textColorHint="#e0e1ea"
+                    android:textSize="30px"
+                    app:customRegexp="([0-9]{17}([0-9]|x|X))|([0-9]{15})"
+                    app:emptyErrorString="@string/edittext_empty_error_txt"
+                    app:testErrorString="请正确输入身份证号码"
+                    app:testType="regexp" />
+                <!-- ([0-9]{17}([0-9]|x|X))|([0-9]{15})  [1-9]\\d{13,16}[a-zA-Z0-9]{1} -->
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rel_sub"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="80px"
+                android:paddingRight="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="科&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;目"
+                    android:textSize="30px" />
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="150px"
+                    android:gravity="center_vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_sub_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="20px"
+                        android:text="科目二"
+                        android:textSize="28px" />
+
+                    <CheckBox
+                        android:id="@+id/cb_sub_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="20px"
+                        android:text="科目三"
+                        android:textSize="28px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rel_type"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="80px"
+                android:paddingRight="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="类&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;型"
+                    android:textSize="30px" />
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="150px"
+                    android:gravity="center_vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_c1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="20px"
+                        android:text="C1"
+                        android:textSize="28px" />
+
+                    <CheckBox
+                        android:id="@+id/cb_c2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="20px"
+                        android:text="C2"
+                        android:textSize="28px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="80px"
+                android:paddingRight="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="服&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;务"
+                    android:textSize="30px" />
+
+                <CheckBox
+                    android:id="@+id/cb_hechang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="150px"
+                    android:text="合场"
+                    android:textSize="28px" />
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@android:color/white"
+                android:paddingBottom="20px"
+                android:paddingLeft="80px"
+                android:paddingTop="20px"
+                android:text="身份证照片"
+                android:textSize="30px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="20px"
+                android:paddingLeft="80px"
+                android:paddingTop="20px">
+
+                <ImageView
+                    android:id="@+id/image_identity_one"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:src="@drawable/image_add" />
+
+                <ImageView
+                    android:id="@+id/image_identity_two"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="20px"
+                    android:src="@drawable/image_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20px"
+                    android:text="（正反两面）"
+                    app:layout_auto_baseheight="marginBottom" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@android:color/white"
+                android:paddingBottom="20px"
+                android:paddingLeft="80px"
+                android:paddingTop="20px"
+                android:text="教练证照片(注：无教练证请上传驾驶证照片)"
+                android:textSize="30px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="20px"
+                android:paddingLeft="80px"
+                android:paddingTop="20px">
+
+                <ImageView
+                    android:id="@+id/image_teacher"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:src="@drawable/image_add" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@android:color/white"
+                android:paddingBottom="20px"
+                android:paddingLeft="80px"
+                android:paddingTop="20px"
+                android:text="行驶证照片"
+                android:textSize="30px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="20px"
+                android:paddingLeft="80px"
+                android:paddingTop="20px">
+
+                <ImageView
+                    android:id="@+id/image_travel"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:src="@drawable/image_add" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@android:color/white"
+                android:paddingBottom="20px"
+                android:paddingLeft="80px"
+                android:paddingTop="20px"
+                android:text="教练车照片"
+                android:textSize="30px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="20px"
+                android:paddingLeft="80px"
+                android:paddingTop="20px">
+
+                <ImageView
+                    android:id="@+id/image_car"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:src="@drawable/image_add" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <Button
+                android:id="@+id/commit"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="80px"
+                android:layout_marginRight="80px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/button_bak"
+                android:text="提交"
+                android:textColor="@android:color/white"
+                android:textSize="35px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

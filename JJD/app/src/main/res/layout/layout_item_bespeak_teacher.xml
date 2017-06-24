@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--android:background="@drawable/bespeak_teacher_car_bak"-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/line_item"
+        android:layout_width="350px"
+        android:layout_height="350px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:background="@drawable/bespeak_teacher_car_bak"
+        android:orientation="vertical"
+        android:padding="10px"
+        app:layout_auto_basewidth="height">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_person" />
+
+        <ImageView
+            android:id="@+id/authentication"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-3dp"
+            android:layout_marginTop="-3dp"
+            android:src="@mipmap/ic_authentication" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#95000000"
+            android:padding="10px">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200px"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/name"
+                android:layout_marginRight="10px"
+                android:layout_toLeftOf="@+id/years"
+                android:text="教龄"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <TextView
+                android:id="@+id/years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.hedgehog.ratingbar.RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/hint_star_num"
+        app:clickable="false"
+        app:starCount="5"
+        app:starEmpty="@mipmap/ic_star_empty"
+        app:starFill="@mipmap/ic_star_fill"
+        app:starImageSize="45px" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/top_left_ok"
+        android:layout_width="230px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitEnd"
+        android:src="@drawable/highlight_know" />
+
+    <ImageView
+        android:id="@+id/top_left_mes"
+        android:layout_width="677px"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        android:src="@drawable/highlight_menu_questions" />
+
+</com.zhy.autolayout.AutoLinearLayout>

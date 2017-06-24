@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rel_image"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_margin="20px"
+        app:layout_auto_baseheight="width">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/person_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_logo"
+            app:sriv_border_color="@color/right_fragment_bak"
+            app:sriv_border_width="1dp"
+            app:sriv_left_bottom_corner_radius="0dip"
+            app:sriv_left_top_corner_radius="0dip"
+            app:sriv_oval="true"
+            app:sriv_right_bottom_corner_radius="0dip"
+            app:sriv_right_top_corner_radius="0dip" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20px"
+        android:layout_toRightOf="@+id/rel_image"
+        android:singleLine="true"
+        android:text="张三"
+        android:textColor="#666"
+        android:textSize="35px"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/cBox"
+        style="@style/CheckboxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25px"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rel_image"
+        android:layout_marginTop="@dimen/size_10px"
+        android:background="@color/gray" />
+</com.zhy.autolayout.AutoRelativeLayout>

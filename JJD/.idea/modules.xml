@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/picker_library/Common/Common.iml" filepath="$PROJECT_DIR$/picker_library/Common/Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JJD.iml" filepath="$PROJECT_DIR$/JJD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picker_library/WheelPicker/WheelPicker.iml" filepath="$PROJECT_DIR$/picker_library/WheelPicker/WheelPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asdutil/asdutil.iml" filepath="$PROJECT_DIR$/asdutil/asdutil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banner/banner.iml" filepath="$PROJECT_DIR$/banner/banner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay_lib/bdwallet_pay_sdk/bdwallet_pay_sdk.iml" filepath="$PROJECT_DIR$/pay_lib/bdwallet_pay_sdk/bdwallet_pay_sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easeui/easeui.iml" filepath="$PROJECT_DIR$/easeui/easeui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/highlight/highlight.iml" filepath="$PROJECT_DIR$/highlight/highlight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay_lib/pay_lib.iml" filepath="$PROJECT_DIR$/pay_lib/pay_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picker_library/picker_library.iml" filepath="$PROJECT_DIR$/picker_library/picker_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay_lib/pingpp/pingpp.iml" filepath="$PROJECT_DIR$/pay_lib/pingpp/pingpp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh-layout/refresh-layout.iml" filepath="$PROJECT_DIR$/refresh-layout/refresh-layout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sliding-menu/sliding-menu.iml" filepath="$PROJECT_DIR$/sliding-menu/sliding-menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweet-alert-dialog/sweet-alert-dialog.iml" filepath="$PROJECT_DIR$/sweet-alert-dialog/sweet-alert-dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/update_library/update_library.iml" filepath="$PROJECT_DIR$/update_library/update_library.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80px"
+        android:layout_margin="@dimen/size_15px"
+        android:visibility="gone"
+        android:background="@android:color/transparent">
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_bak"
+            android:drawableLeft="@drawable/ic_search"
+            android:paddingLeft="25px"
+            android:drawablePadding="20px"
+            android:hint="Search"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="32px"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</merge>

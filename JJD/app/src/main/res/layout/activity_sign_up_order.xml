@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bak"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bak"
+        android:onClick="rootViewClick"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:paddingRight="50px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40px"
+                android:text="订&#160;&#160;单&#160;&#160;号"
+                android:textColor="@color/gray"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:paddingRight="50px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40px"
+                android:text="学车类型"
+                android:textColor="@color/gray"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:paddingRight="50px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:text="付款账号"
+                android:textColor="@color/gray"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/pay_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="wsdfsad456946438"
+                android:textSize="30px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:paddingRight="50px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40px"
+                android:text="付款时间"
+                android:textColor="@color/gray"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/pay_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:paddingRight="50px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40px"
+                android:text="总&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;价"
+                android:textColor="@color/gray"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/pay_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="45px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_margin="60px"
+            android:background="@drawable/button_bak"
+            android:onClick="closeSelf"
+            android:text="@string/txt_sure"
+            android:textColor="@android:color/white"
+            android:textSize="35px"
+            android:visibility="gone" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

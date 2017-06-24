@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+
+    <com.asd.android.widget.MyRadioGroup
+        android:id="@+id/rbGroup_option"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@android:color/white">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rb_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/teacher_select_option_bak"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="学车时间"
+                android:textColor="@color/text_bespeak_teacher"
+                android:textSize="30px" />
+
+            <RadioButton
+                android:id="@+id/rb_way"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/teacher_select_option_bak"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="学车方式"
+                android:textColor="@color/text_bespeak_teacher"
+                android:textSize="30px" />
+
+            <RadioButton
+                android:id="@+id/rb_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/teacher_select_option_bak"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="学车类型"
+                android:textColor="@color/text_bespeak_teacher"
+                android:textSize="30px" />
+
+            <RadioButton
+                android:id="@+id/rb_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/teacher_select_option_bak"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="学车区域"
+                android:textColor="@color/text_bespeak_teacher"
+                android:textSize="30px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.asd.android.widget.MyRadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/left_menu_foused" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/left_menu_foused"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:background="@android:color/white"
+            android:padding="20px"
+            android:text="提示：没有完全符合您找的教练"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30px"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/white"
+            android:padding="20px"
+            android:text="推荐教练"
+            android:textSize="30px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15px"
+        android:text="查看推荐教练"
+        android:textColor="#999"
+        android:textSize="30px"
+        android:visibility="gone" />
+
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ViewStub
+                    android:id="@+id/no_data_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout="@layout/layout_no_data" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <com.asd.android.widget.scrollview.MyGridView
+                        android:id="@+id/gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:horizontalSpacing="0dp"
+                        android:listSelector="#00000000"
+                        android:numColumns="2"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0dp" />
+
+                    <!-- <ListView
+                         android:id="@+id/listview"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:cacheColorHint="@android:color/transparent"
+                         android:divider="@color/left_menu_foused"
+                         android:dividerHeight="0dp"
+                         android:listSelector="@android:color/transparent"
+                         android:scrollbars="none" />-->
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <TextView
+        android:id="@+id/load_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/list_footer_txt"
+        android:visibility="gone" />
+</com.zhy.autolayout.AutoLinearLayout>

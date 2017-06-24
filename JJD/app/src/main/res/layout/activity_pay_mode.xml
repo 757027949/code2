@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bak"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bak"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.asd.android.widget.MyRadioGroup
+                android:id="@+id/rbGroup_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_zfb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/ic_pay_zfb"
+                        android:drawablePadding="30px"
+                        android:drawableRight="@drawable/rb_select"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="20px"
+                        android:paddingLeft="50px"
+                        android:paddingRight="50px"
+                        android:paddingTop="20px"
+                        android:text="支付宝支付"
+                        android:textSize="30px" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_wx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/ic_pay_wx"
+                        android:drawablePadding="30px"
+                        android:drawableRight="@drawable/rb_select"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="20px"
+                        android:paddingLeft="50px"
+                        android:paddingRight="50px"
+                        android:paddingTop="20px"
+                        android:text="微信支付"
+                        android:textSize="30px" />
+
+                    <RadioButton
+                        android:id="@+id/rb_balance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:drawableLeft="@mipmap/ic_logo"
+                        android:drawablePadding="30px"
+                        android:drawableRight="@drawable/rb_select"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="20px"
+                        android:paddingLeft="50px"
+                        android:paddingRight="50px"
+                        android:paddingTop="20px"
+                        android:text="余额支付"
+                        android:textSize="30px" />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.asd.android.widget.MyRadioGroup>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:background="@android:color/white"
+                android:paddingBottom="20px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="20px">
+
+                <TextView
+                    android:id="@+id/hint_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付金额（元）"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hint_money"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="￥0.00"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="40px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_margin="50px"
+                android:background="@drawable/button_bak"
+                android:text="确认支付"
+                android:textColor="@android:color/white"
+                android:textSize="35px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.otw.asd.jjdt"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 3
+        versionName "1.1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+  /*  repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }*/
+
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']  // <-- Set your folder here!
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.hedgehog.ratingbar:app:1.0.4'
+    compile 'com.joooonho:selectableroundedimageview:1.0.1'
+//    compile 'com.github.niorgai:StatusBarCompat:1.0.1'
+    compile project(path: ':asdutil')
+    //    compile(name: 'asdutil-debug', ext: 'aar')
+    compile project(path: ':multi-image-selector')
+    compile project(path: ':refresh-layout')
+    compile project(path: ':library:WheelPicker')
+    compile files('libs/fastjson-1.1.37.jar')
+    compile files('libs/jpush-android-2.1.7.jar')
+    compile project(path: ':update_library')
+    compile project(path: ':update_library')
+}

@@ -1,0 +1,2 @@
+include ':app', ':sliding-menu', ':asdutil', ':multi-image-selector', ':refresh-layout', ':sweet-alert-dialog',
+        ':picker_library:Common', ':picker_library:WheelPicker', ':pay_lib:bdwallet_pay_sdk', ':pay_lib:pingpp', ':update_library', ':highlight', ':banner', ':easeui'

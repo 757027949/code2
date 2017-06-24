@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/line_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/size_30px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rel_person_image"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:background="@android:color/white"
+            android:gravity="center"
+            app:layout_auto_baseheight="width|padding">
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/person_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_person"
+                app:layout_auto_baseheight="width"
+                app:sriv_border_color="@color/green_light"
+                app:sriv_border_width="0dp"
+                app:sriv_left_bottom_corner_radius="0dip"
+                app:sriv_left_top_corner_radius="0dip"
+                app:sriv_oval="true"
+                app:sriv_right_bottom_corner_radius="0dip"
+                app:sriv_right_top_corner_radius="0dip" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35px"
+            android:layout_marginRight="35px"
+            android:layout_weight="1"
+            android:textColor="#666" />
+
+        <CheckBox
+            android:id="@+id/cBox"
+            style="@style/CheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

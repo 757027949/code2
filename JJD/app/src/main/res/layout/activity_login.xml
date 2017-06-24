@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bak_gray"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="vertical">
+
+            <com.andreabaccega.widget.FormEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_bak"
+                android:drawableLeft="@drawable/login_name_image"
+                android:drawablePadding="20px"
+                android:gravity="center_vertical"
+                android:hint="@string/login_name_hint"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:textColor="#666"
+                android:textColorHint="#999"
+                android:textSize="30px"
+                app:customRegexp="[1][34578]\\d{9}"
+                app:emptyErrorString="@string/edittext_empty_error_txt"
+                app:testErrorString="@string/edittext_phone_error_txt"
+                app:testType="regexp" />
+
+
+            <com.andreabaccega.widget.FormEditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_bak"
+                android:drawableLeft="@drawable/login_pwd_image"
+                android:drawablePadding="20px"
+                android:gravity="center_vertical"
+                android:hint="@string/login_pwd_hint"
+                android:inputType="textPassword"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:textColor="#666"
+                android:textColorHint="#999"
+                android:textSize="30px"
+                app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="80px"
+            android:background="@drawable/button_bak"
+            android:text="登&#160;&#160;&#160;录"
+            android:textColor="@android:color/white"
+            android:textSize="35px" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px">
+
+            <TextView
+                android:id="@+id/forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="-30px"
+                android:padding="30px"
+                android:text="忘记密码？"
+                android:textColor="@color/green"
+                android:textSize="30px" />
+
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-30px"
+                android:padding="30px"
+                android:text="注册"
+                android:textColor="@color/green"
+                android:textSize="30px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_other_line_bak" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:text="@string/login_other_account_hint"
+                android:textColor="#999"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_other_line_bak" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image_wx"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:src="@drawable/ic_wx" />
+
+
+            <ImageView
+                android:id="@+id/image_qq"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:src="@drawable/ic_qq" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

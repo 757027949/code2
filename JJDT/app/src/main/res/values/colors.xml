@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="color_bak">#EEEEEE</color>
+    <color name="top_bar_bak">#F2F3F3</color>
+    <color name="yellow">#EFC23B</color>
+
+    <color name="option_status">#e5e5e5</color>
+    <color name="gray">#B3B3B3</color>
+    <color name="gray_light">#60B3B3B3</color>
+    <color name="green">#21903A</color>
+    <color name="green_light">#9521903A</color>
+</resources>

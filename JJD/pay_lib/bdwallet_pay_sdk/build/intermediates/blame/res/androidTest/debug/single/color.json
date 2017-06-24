@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\code2\\JJD\\pay_lib\\bdwallet_pay_sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\wallet_base_dialog_btntext_color_selector.xml",
+        "source": "E:\\code2\\JJD\\pay_lib\\bdwallet_pay_sdk\\build\\intermediates\\bundles\\debug\\res\\color\\wallet_base_dialog_btntext_color_selector.xml"
+    },
+    {
+        "merged": "E:\\code2\\JJD\\pay_lib\\bdwallet_pay_sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\wallet_base_click_text_color.xml",
+        "source": "E:\\code2\\JJD\\pay_lib\\bdwallet_pay_sdk\\build\\intermediates\\bundles\\debug\\res\\color\\wallet_base_click_text_color.xml"
+    }
+]

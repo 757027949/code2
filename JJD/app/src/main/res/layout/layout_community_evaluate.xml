@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#30797979"
+        android:gravity="center">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_80px"
+            android:layout_margin="@dimen/size_25px"
+            android:layout_weight="1"
+            android:background="@drawable/community_evaluate_bak">
+
+            <com.andreabaccega.widget.FormEditText
+                android:id="@+id/mes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@mipmap/ic_community_evaluate"
+                android:drawablePadding="20px"
+                android:hint="说说你的想法吧"
+                android:paddingLeft="25px"
+                android:textColor="#666"
+                android:textColorHint="#999"
+                android:textSize="30px"
+                android:paddingRight="@dimen/size_10px"
+                app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_marginRight="@dimen/size_25px"
+            android:background="@drawable/button_bak"
+            android:text="发送"
+            android:textColor="@android:color/white"
+            android:textSize="35px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</merge>

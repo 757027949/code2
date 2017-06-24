@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        minSdkVersion 9
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile 'com.pnikosis:materialish-progress:1.0'
+}
+
+//生成JAR
+/*task makeJar(type: Copy) {
+    delete 'build/libs/sweet_alert_dialog.jar'
+    from('build/intermediates/bundles/release/')
+    into('build/libs/')
+    include('classes.jar')
+    rename ('classes.jar', 'sweet_alert_dialog.jar')
+}
+makeJar.dependsOn(build)*/
+//生成JAR

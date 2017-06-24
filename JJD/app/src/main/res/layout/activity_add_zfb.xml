@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bak"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="30px"
+            android:text="支付宝帐号"
+            android:textSize="30px" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/accounts"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:background="@drawable/edit_bak"
+            android:hint="请输入支付宝帐号"
+            android:inputType="text"
+            android:maxLength="25"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:singleLine="true"
+            android:textColor="#e0e1ea"
+            android:textColorHint="#e0e1ea"
+            android:textSize="28px"
+            app:emptyErrorString="@string/edittext_empty_error_txt" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@drawable/button_bak"
+        android:text="@string/txt_commit"
+        android:textColor="@android:color/white"
+        android:layout_margin="50px"
+        android:textSize="35px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bak"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:background="@android:color/white"
+                    android:padding="30px"
+                    app:layout_auto_baseheight="padding">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="140px"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/ic_person" />
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/image">
+
+                        <TextView
+                            android:id="@+id/hint_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="姓名："
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/hint_name"
+                            android:textSize="30px" />
+
+                        <ImageView
+                            android:id="@+id/call"
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-25px"
+                            android:layout_marginTop="-25px"
+                            android:padding="25px"
+                            android:src="@mipmap/ic_call" />
+
+                        <TextView
+                            android:id="@+id/hint_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/star_num"
+                            android:text="年龄："
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/hint_age"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/hint_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="30px"
+                            android:layout_toRightOf="@+id/age"
+                            android:text="教龄："
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/hint_time"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/hint_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="地点："
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/hint_address"
+                            android:singleLine="true"
+                            android:textSize="30px" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:layout_marginTop="20px"
+                    android:background="@android:color/white"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px">
+
+                    <TextView
+                        android:id="@+id/hint_star_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="星级："
+                        android:textSize="30px" />
+
+                    <com.hedgehog.ratingbar.RatingBar
+                        android:id="@+id/star_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/hint_star_num"
+                        app:clickable="false"
+                        app:starCount="5"
+                        app:starEmpty="@mipmap/ic_star_empty"
+                        app:starFill="@mipmap/ic_star_fill"
+                        app:starImageSize="50px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/total"
+                        android:layout_toLeftOf="@+id/total"
+                        android:text="累计单数："
+                        android:textSize="25px" />
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15px"
+                        android:text="0"
+                        android:textSize="25px" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:background="@android:color/white"
+                    android:padding="30px">
+
+                    <TextView
+                        android:id="@+id/hint_order_stutas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单状态："
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/order_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/hint_order_stutas"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/hint_order_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hint_order_stutas"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginTop="15px"
+                        android:text="单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;价："
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/order_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/hint_order_money"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/hint_order_money"
+                        android:text="0元"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/hint_order_persons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hint_order_money"
+                        android:text="总&#160;&#160;人&#160;&#160;数："
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/order_persons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/hint_order_persons"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/hint_order_persons"
+                        android:text="0人"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/hint_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hint_order_persons"
+                        android:layout_marginTop="15px"
+                        android:text="类&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;型："
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/hint_type"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/hint_type"
+                        android:text="C1"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/hint_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/hint_type"
+                        android:layout_below="@+id/hint_order_persons"
+                        android:layout_marginLeft="300px"
+                        android:text="科&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;目："
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/hint_subject"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/hint_subject"
+                        android:text="科目二"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/hint_study_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hint_type"
+                        android:layout_marginTop="15px"
+                        android:text="学车时间："
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/study_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/hint_study_time"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/hint_study_time"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/hint_create_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hint_study_time"
+                        android:layout_marginTop="15px"
+                        android:text="下单时间："
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/create_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/hint_create_time"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/hint_create_time"
+                        android:textSize="28px" />
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@drawable/stroke"
+                        android:layerType="software" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="35px"
+                        android:text="0元"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/price"
+                        android:text="订单总价："
+                        android:textSize="28px" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_bak"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/evaluate"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_marginTop="40px"
+                        android:layout_toLeftOf="@+id/pay"
+                        android:background="@drawable/button_bak"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="去评价"
+                        android:textColor="@android:color/white"
+                        android:textSize="35px"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_marginTop="40px"
+                        android:layout_toLeftOf="@+id/pay"
+                        android:background="@drawable/button_bak"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="取消订单"
+                        android:textColor="@android:color/white"
+                        android:textSize="35px"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/refund"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_marginTop="40px"
+                        android:layout_toLeftOf="@+id/pay"
+                        android:background="@drawable/button_record_info_refund_bak"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="申请退款"
+                        android:textSize="35px"
+                        android:visibility="gone" />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

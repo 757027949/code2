@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rel_image"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        app:layout_auto_baseheight="width">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/person_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_teacher_bespeak_bak_light"
+            app:sriv_border_color="@color/right_fragment_bak"
+            app:sriv_border_width="0dp"
+            app:sriv_left_bottom_corner_radius="0dip"
+            app:sriv_left_top_corner_radius="0dip"
+            app:sriv_oval="true"
+            app:sriv_right_bottom_corner_radius="0dip"
+            app:sriv_right_top_corner_radius="0dip" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

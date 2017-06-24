@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <com.asd.android.widget.MyRadioGroup
+        android:id="@+id/rbGroup_convenient"
+        android:layout_width="match_parent"
+        android:layout_height="70px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rb_person"
+                style="@style/HomeConvenientRadioButton"
+                android:checked="true"
+                android:text="人数" />
+
+            <RadioButton
+                android:id="@+id/rb_time"
+                style="@style/HomeConvenientRadioButton"
+                android:text="时间" />
+
+            <RadioButton
+                android:id="@+id/rb_address"
+                style="@style/HomeConvenientRadioButton"
+                android:text="地点" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.asd.android.widget.MyRadioGroup>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ListView
+            android:id="@+id/convenient_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#F4F4F4"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <TextView
+        android:id="@+id/line_convenient_list_bottom_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30px"
+        android:layout_marginTop="-30px"
+        android:background="#99F4F4F4"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#F4F4F4"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/line_convenient_list_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:background="@color/home_convenient_item_bak">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

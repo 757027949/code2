@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/left_menu_foused"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <include layout="@layout/layout_top_bar" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="20px"
+            android:paddingRight="30px"
+            android:tag="0"
+            android:text="明细"
+            android:textColor="@color/gray" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/line_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@mipmap/ic_money"
+            app:layout_auto_basewidth="height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25px"
+            android:layout_marginTop="20px"
+            android:text="我的余额"
+            android:textColor="@android:color/black"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/current_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.0"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="45px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <Button
+        android:id="@+id/account_out"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:background="@drawable/button_bak"
+        android:text="提现"
+        android:textColor="@android:color/white"
+        android:textSize="35px" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.otw.asd.jjd"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 7
+        versionName "2.0.3"
+        multiDexEnabled true
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /*  repositories {
+          flatDir {
+              dirs 'libs'
+          }
+      }*/
+
+
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']  // <-- Set your folder here!
+    }
+
+    packagingOptions {
+        exclude 'assets/lineDashTexture.png'
+    }
+
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile files('libs/AMap_3DMap_V3.2.1_20160225.jar')
+    compile project(path: ':sliding-menu')
+    compile project(path: ':asdutil')
+    compile 'com.zhy:autolayout:1.4.3'
+    compile 'com.joooonho:selectableroundedimageview:1.0.1'
+    compile files('libs/AMap_Location_v2.3.0_20160112.jar')
+    compile 'com.hedgehog.ratingbar:app:1.0.4'
+    compile project(path: ':multi-image-selector')
+    compile project(path: ':refresh-layout')
+    /* compile(name: 'multi-image-selector-release', ext: 'aar')
+                                             compile 'com.squareup.picasso:picasso:2.4.0'
+
+                                             compile(name: 'asdutil-release', ext: 'aar')
+                                             compile('com.andreabaccega:android-form-edittext:1.2.1@aar') {
+                                                 exclude module: 'design'
+                                             }*/
+
+    //    compile project(path: ':CrashHelper')
+    compile project(path: ':picker_library:WheelPicker')
+    compile files('libs/fastjson-1.1.37.jar')
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    compile project(':pay_lib:pingpp')
+    compile project(':pay_lib:bdwallet_pay_sdk')
+    compile 'com.jungly:gridPasswordView:0.3'
+    compile project(path: ':update_library')
+    compile files('libs/jpush-android-2.1.7.jar')
+    compile project(path: ':highlight')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5756.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.2'
+    compile 'com.orhanobut:hawk:2.0.0-Alpha'
+    compile project(path: ':easeui')
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.liulishuo.magicprogresswidget:library:1.0.9'
+
+    compile 'com.github.mmin18:realtimeblurview:1.0.4'
+}

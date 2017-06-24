@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval"
+            android:useLevel="false">
+            <solid android:color="@color/home_menu_bak" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/left_menu_foused" />
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+        </shape>
+    </item>
+    <item android:top="50dp">
+        <shape>
+            <solid android:color="@color/home_menu_bak" />
+        </shape>
+    </item>
+</layer-list>

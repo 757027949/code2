@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="30px">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/person_image"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_marginRight="10px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_person"
+            app:layout_auto_baseheight="width"
+            app:sriv_border_color="@color/green"
+            app:sriv_border_width="0dp"
+            app:sriv_left_bottom_corner_radius="0dip"
+            app:sriv_left_top_corner_radius="0dip"
+            app:sriv_oval="true"
+            app:sriv_right_bottom_corner_radius="0dip"
+            app:sriv_right_top_corner_radius="0dip" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/person_image"
+            android:textSize="28px"
+            android:textStyle="bold" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/person_image"
+            android:layout_toRightOf="@+id/person_image">
+
+            <TextView
+                android:id="@+id/hint_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="评价："
+                android:textSize="25px" />
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/star_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hint_star"
+                app:clickable="false"
+                app:starCount="5"
+                app:starEmpty="@mipmap/ic_star_empty"
+                app:starFill="@mipmap/ic_star_fill"
+                app:starImageSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/pass_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="25px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px">
+
+        <TextView
+            android:id="@+id/mes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/laud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mes"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10px"
+            android:drawableLeft="@drawable/ic_laud"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="点赞" />
+
+        <TextView
+            android:id="@+id/reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/laud"
+            android:layout_toLeftOf="@+id/laud"
+            android:drawableLeft="@drawable/ic_reply"
+            android:gravity="center"
+            android:text="回复"
+            android:visibility="gone" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

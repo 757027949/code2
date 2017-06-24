@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_refresh_header_mooc_style.xml",
+        "source": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\bundles\\debug\\res\\layout\\view_refresh_header_mooc_style.xml"
+    },
+    {
+        "merged": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_refresh_header_meituan.xml",
+        "source": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\bundles\\debug\\res\\layout\\view_refresh_header_meituan.xml"
+    },
+    {
+        "merged": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_refresh_header_stickiness.xml",
+        "source": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\bundles\\debug\\res\\layout\\view_refresh_header_stickiness.xml"
+    },
+    {
+        "merged": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_refresh_header_normal.xml",
+        "source": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\bundles\\debug\\res\\layout\\view_refresh_header_normal.xml"
+    },
+    {
+        "merged": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_normal_refresh_footer.xml",
+        "source": "E:\\code2\\JJD\\refresh-layout\\build\\intermediates\\bundles\\debug\\res\\layout\\view_normal_refresh_footer.xml"
+    }
+]

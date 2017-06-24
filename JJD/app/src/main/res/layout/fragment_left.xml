@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/rel_head"
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:background="@color/green_light"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/size_20px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rel_person_image"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/left_image_bak"
+            android:gravity="center"
+            android:padding="3dp"
+            app:layout_auto_baseheight="width|padding">
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/person_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_person"
+                app:layout_auto_baseheight="width"
+                app:sriv_border_color="@color/green_light"
+                app:sriv_border_width="2dp"
+                app:sriv_left_bottom_corner_radius="0dip"
+                app:sriv_left_top_corner_radius="0dip"
+                app:sriv_oval="true"
+                app:sriv_right_bottom_corner_radius="0dip"
+                app:sriv_right_top_corner_radius="0dip" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:textColor="@android:color/white"
+            android:textSize="35px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10px"
+            android:layout_marginTop="@dimen/size_5px"
+            android:background="@drawable/exp_bak"
+            android:paddingBottom="3px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:paddingTop="3px"
+            android:text="LV0"
+            android:textColor="@color/green_light"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/declaration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/line_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_sign_up"
+            style="@style/LeftMenuBak"
+            android:drawableLeft="@drawable/ic_sign_up"
+            android:text="@string/left_sign_up" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/left_menu_foused" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/line_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_account"
+            style="@style/LeftMenuBak"
+            android:drawableLeft="@drawable/ic_account"
+            android:text="@string/left_account" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/left_menu_foused" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/line_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/item_record"
+            style="@style/LeftMenuBak"
+            android:drawableLeft="@drawable/ic_record"
+            android:text="@string/left_record" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/left_menu_foused" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/line_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_bind"
+            style="@style/LeftMenuBak"
+            android:drawableLeft="@drawable/ic_bind"
+            android:text="@string/left_bind" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/left_menu_foused" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/line_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/item_student"
+            style="@style/LeftMenuBak"
+            android:drawableLeft="@drawable/ic_student"
+            android:text="@string/left_student" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/left_menu_foused" />
+
+
+    <TextView
+        android:id="@+id/item_idea"
+        style="@style/LeftMenuBak"
+        android:drawableLeft="@drawable/ic_idea"
+        android:text="@string/left_idea" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/left_menu_foused" />
+
+    <TextView
+        android:id="@+id/item_exit"
+        style="@style/LeftMenuBak"
+        android:drawableLeft="@drawable/ic_exit"
+        android:text="@string/left_exit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/left_menu_foused" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务热线："
+            android:textColor="#999"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/hot_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:text="@string/hot_phone_txt"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="25px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
+

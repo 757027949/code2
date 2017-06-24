@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_convenient_item_bak">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/rel_person_image"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_auto_baseheight="width|padding">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/person_image"
+            android:layout_width="@dimen/size_75px"
+            android:layout_height="@dimen/size_75px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_person"
+            app:layout_auto_baseheight="width"
+            app:sriv_border_color="@color/green_light"
+            app:sriv_border_width="0dp"
+            app:sriv_left_bottom_corner_radius="0dip"
+            app:sriv_left_top_corner_radius="0dip"
+            app:sriv_oval="true"
+            app:sriv_right_bottom_corner_radius="0dip"
+            app:sriv_right_top_corner_radius="0dip" />
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5px"
+            android:textColor="#999"
+            android:textSize="20px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名："
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:id="@+id/teacher_name"
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别："
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:id="@+id/teacher_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄："
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:id="@+id/teacher_age"
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="教龄："
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:id="@+id/teacher_s_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0年"
+                    android:textColor="#999"
+                    android:textSize="23px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地点："
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:id="@+id/teacher_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999"
+                    android:textSize="23px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/convenient_item_line_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/home_convenient_item_bak">
+
+            <TextView
+                android:id="@+id/item_status"
+                android:layout_width="30px"
+                android:layout_height="match_parent"
+                android:background="#F4F4F4"
+                android:gravity="center"
+                android:text=">"
+                android:textColor="#999"
+                android:textStyle="bold" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/course_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:id="@+id/course_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#999"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:id="@+id/course_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#999"
+                    android:textSize="23px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

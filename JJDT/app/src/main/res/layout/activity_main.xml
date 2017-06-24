@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bak"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/line_item"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_auto_basewidth="height">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_person" />
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:src="@drawable/ic_exit" />
+
+        <ImageView
+            android:id="@+id/image_verification_status"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-3dp"
+            android:layout_marginTop="-3dp"
+            android:src="@mipmap/ic_authentication" />
+
+        <TextView
+            android:id="@+id/hechang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rel_hint"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/hechang_bak"
+            android:paddingBottom="5px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="5px"
+            android:text="合场"
+            android:textColor="@color/green"
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rel_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#95000000"
+            android:paddingBottom="10px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:paddingTop="20px">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200px"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="40px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/name"
+                android:layout_marginRight="10px"
+                android:layout_toLeftOf="@+id/years"
+                android:text="教龄"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <TextView
+                android:id="@+id/years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <com.hedgehog.ratingbar.RatingBar
+                    android:id="@+id/ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20px"
+                    android:paddingLeft="50px"
+                    android:paddingTop="20px"
+                    app:clickable="false"
+                    app:starCount="5"
+                    app:starEmpty="@mipmap/ic_star_empty"
+                    app:starFill="@mipmap/ic_star_fill"
+                    app:starImageSize="50px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:padding="30px">
+
+
+                <TextView
+                    android:id="@+id/line_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/line_v"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/curriculum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/line_h"
+                    android:layout_toLeftOf="@+id/line_v"
+                    android:background="@drawable/home_menu_bak"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/ic_home_curriculum"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="我的课程"
+                    android:textSize="40px"
+                    app:layout_auto_basewidth="height" />
+
+                <TextView
+                    android:id="@+id/record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/line_h"
+                    android:layout_toLeftOf="@+id/line_v"
+                    android:background="@drawable/home_menu_bak"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/ic_home_record"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="我的记录"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/set_curriculum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/line_h"
+                    android:layout_toRightOf="@+id/line_v"
+                    android:background="@drawable/home_menu_bak"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/ic_home_set_curriculum"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="课程安排"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/line_h"
+                    android:layout_toRightOf="@+id/line_v"
+                    android:background="@drawable/home_menu_bak"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/ic_home_account"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="我的账户"
+                    android:textSize="40px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:id="@+id/glass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99E8E8E8"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="auditing"
+                android:text="待审核..."
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="50px"
+                android:visibility="gone" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:background="@android:color/white"
+                android:padding="30px">
+
+                <!--android:background="@drawable/button_bak"-->
+                <TextView
+                    android:id="@+id/order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_order_bak"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="单来了（0）"
+                    android:textColor="@android:color/white"
+                    android:textSize="45px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="100px"
+                    android:src="@mipmap/ic_home_order" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ViewStub
+            android:id="@+id/home_menu_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_home_menu_top" />
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

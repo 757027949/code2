@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <include layout="@layout/layout_top_bar" />
+
+
+        <TextView
+            android:id="@+id/add_voucher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="25px"
+            android:text="添加优惠券"
+            android:textSize="30px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.asd.android.widget.MyRadioGroup
+        android:id="@+id/rbGroup_status"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@android:color/white">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rb_use"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/option_status_bak"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="可使用"
+                android:textColor="@color/text_bespeak_teacher"
+                android:textSize="28px" />
+
+            <RadioButton
+                android:id="@+id/rb_unuse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/option_status_bak"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="不可用"
+                android:textColor="@color/text_bespeak_teacher"
+                android:textSize="28px" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.asd.android.widget.MyRadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/left_menu_foused" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</com.zhy.autolayout.AutoLinearLayout>

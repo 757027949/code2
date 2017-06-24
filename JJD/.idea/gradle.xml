@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/asdutil" />
+            <option value="$PROJECT_DIR$/banner" />
+            <option value="$PROJECT_DIR$/easeui" />
+            <option value="$PROJECT_DIR$/highlight" />
+            <option value="$PROJECT_DIR$/multi-image-selector" />
+            <option value="$PROJECT_DIR$/pay_lib" />
+            <option value="$PROJECT_DIR$/pay_lib/bdwallet_pay_sdk" />
+            <option value="$PROJECT_DIR$/pay_lib/pingpp" />
+            <option value="$PROJECT_DIR$/picker_library" />
+            <option value="$PROJECT_DIR$/picker_library/Common" />
+            <option value="$PROJECT_DIR$/picker_library/WheelPicker" />
+            <option value="$PROJECT_DIR$/refresh-layout" />
+            <option value="$PROJECT_DIR$/sliding-menu" />
+            <option value="$PROJECT_DIR$/sweet-alert-dialog" />
+            <option value="$PROJECT_DIR$/update_library" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

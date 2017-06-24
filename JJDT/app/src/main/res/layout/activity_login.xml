@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bak"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20px"
+        android:padding="20px"
+        android:text="注册"
+        android:textSize="35px" />
+
+    <ImageView
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="100px"
+        android:layout_marginTop="200px"
+        android:src="@mipmap/ic_logo"
+        app:layout_auto_basewidth="height" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:background="@drawable/login_edit_bak"
+        android:orientation="vertical">
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/login_name_image"
+            android:drawablePadding="10px"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:singleLine="true"
+            android:textColor="#e0e1ea"
+            android:textColorHint="#e0e1ea"
+            android:textSize="30px"
+            app:customRegexp="[1][34578]\\d{9}"
+            app:emptyErrorString="@string/edittext_empty_error_txt"
+            app:testErrorString="@string/edittext_phone_error_txt"
+            app:testType="regexp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/option_status" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/login_pwd_image"
+            android:drawablePadding="10px"
+            android:gravity="center_vertical"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="25"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:singleLine="true"
+            android:textColor="#e0e1ea"
+            android:textColorHint="#e0e1ea"
+            android:textSize="30px"
+            app:emptyErrorString="@string/edittext_empty_error_txt" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/button_bak"
+        android:text="登&#160;&#160;&#160;陆"
+        android:textColor="@android:color/white"
+        android:textSize="35px" />
+
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="60px"
+        android:padding="20px"
+        android:text="忘记密码？"
+        android:textColor="@color/green_light"
+        android:textSize="30px" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

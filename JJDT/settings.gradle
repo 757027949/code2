@@ -1,0 +1,2 @@
+include ':app', ':sweet-alert-dialog', ':asdutil', ':multi-image-selector', ':refresh-layout',
+        ':library:Common', ':library:WheelPicker', ':update_library'

@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">加减档</string>
+
+    <string name="edittext_empty_error_txt">内容不能为空</string>
+    <string name="edittext_phone_error_txt">请正确输入手机号码</string>
+
+    <string name="txt_commit">提&#160;&#160;&#160;交</string>
+    <string name="txt_sure">确&#160;&#160;&#160;定</string>
+
+    <string name="txt_add">添加</string>
+
+    <string name="login_name_hint">邮箱/手机号</string>
+    <string name="login_pwd_hint">密码</string>
+    <string name="login_other_account_hint">第三方帐号快速登录</string>
+
+    <string name="register_phone_hint">请输入手机号（联系电话）</string>
+    <string name="register_code_hint">请输入验证码</string>
+    <string name="register_pwd_hint">请输入登录密码</string>
+    <string name="register_pay_pwd_hint">请输入支付密码</string>
+
+    <string name="bind_other_account_title_hint">建议绑定第三方帐号</string>
+    <string name="bind_other_account_pass_hint">跳&#160;&#160;&#160;过</string>
+
+    <string name="user_info_mes_hint">我的信息</string>
+    <string name="user_info_declaration_hint">交友宣言</string>
+    <string name="user_info_declaration__mes_hint">暂无交友宣言</string>
+    <string name="user_info_birthday_hint">生日</string>
+    <string name="user_info_address_hint">地址</string>
+    <string name="user_info_address_info_hint">详细地址</string>
+    <string name="user_info_status_hint">感情状况</string>
+    <string name="user_info_constellation_hint">星座</string>
+    <string name="user_info_byuser_hint">推荐人</string>
+
+    <!-- 左滑动 -->
+    <string name="left_exit">退出</string>
+    <string name="left_idea">意见</string>
+    <string name="left_student">代理招生</string>
+    <string name="left_sign_up">报名学车</string>
+    <string name="left_account">我的账户</string>
+    <string name="left_record">我的记录</string>
+    <string name="left_bind">绑定</string>
+
+    <!-- 主页菜单 -->
+    <string name="home_questions">题库</string>
+    <!--<string name="home_sign_up">报名</string>-->
+    <string name="home_choose">精选</string>
+    <string name="home_car">我要学车</string>
+    <string name="home_examination">考试</string>
+    <string name="home_community">社区</string>
+
+    <!-- 右滑动 -->
+    <string name="right_title">聊天记录</string>
+
+    <string name="idea_hint_one">您有什么问题或建议想对我们说？</string>
+    <string name="idea_hint_two">您的主题：</string>
+    <string name="idea_hint_three">您的宝贵意见，就是我们进步的源泉</string>
+    <string name="idea_hint_four">请详细描述您遇到的问题，有助于我们快速定位并解决问题，或留下您宝贵的建议或意见，我们会认真进行评估！</string>
+
+    <string name="bespeak_no_teacher"></string>
+    <string name="bespeak_teacher_no_check">不限</string>
+
+    <string name="json_error">网络异常，请重新登录</string>
+    <string name="no_data">没有更多数据了...</string>
+
+    <string name="register_check_mes">我已阅读并同意使用条款和隐私政策</string>
+    <string name="list_footer_txt">上拉加载更多...</string>
+
+    <string name="hot_phone_txt">023-62388583</string>
+
+
+    <string name="chat_phont">拍照</string>
+    <string name="chat_picture">照片</string>
+    <string name="chat_location">位置</string>
+    <string name="chat_card">名片</string>
+    <string name="chat_subject">课时</string>
+    <string name="chat_card_mes">个人名片</string>
+
+    <item name="teacher_curriculum_id" type="id" />
+    <item name="update_user_image_id" type="id" />
+    <item name="home_convenient_item_id" type="id" />
+
+</resources>
+

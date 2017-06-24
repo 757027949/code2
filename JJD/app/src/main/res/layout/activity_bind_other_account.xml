@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="500px"
+        android:layout_height="450px"
+        android:background="@drawable/activity_bind_bak"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/bind_other_account_title_hint"
+            android:textColor="#333"
+            android:textSize="35px"
+            android:textStyle="bold" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_wx"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/bind_other_account_wx"
+                android:text="微信"
+                android:textColor="@color/text_bind_other_account_wx" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="140px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:background="#949494" />
+
+            <Button
+                android:id="@+id/btn_qq"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/bind_other_account_qq"
+                android:text="QQ"
+                android:textColor="@color/text_bind_other_account_qq" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@drawable/button_bak"
+            android:text="@string/bind_other_account_pass_hint"
+            android:textColor="@android:color/white"
+            android:textSize="35px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

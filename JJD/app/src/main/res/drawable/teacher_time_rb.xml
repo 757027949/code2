@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/gray" android:state_enabled="false" />
+    <item android:drawable="@color/teacher_time_check" android:state_checked="false" />
+    <item android:drawable="@android:color/white" android:state_checked="true" />
+
+    <!--<item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/gray" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/yellow" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/yellow_light" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>-->
+</selector><!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval"
+            android:useLevel="false">
+            <solid android:color="@color/white" />
+            <stroke
+                android:width="10dp"
+                android:color="#EAECEC" />
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+        </shape>
+    </item>
+    <item android:top="5dp" android:left="5dp" android:right="5dp" android:bottom="5dp">
+        <shape
+            android:shape="oval"
+            android:useLevel="false">
+            <solid android:color="@android:color/transparent" />
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+        </shape>
+    </item>
+</layer-list>-->

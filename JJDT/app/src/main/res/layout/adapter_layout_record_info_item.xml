@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/person_image"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginRight="30px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_person"
+            app:sriv_border_color="#FFFFFF"
+            app:sriv_border_width="0dp"
+            app:sriv_left_bottom_corner_radius="0dip"
+            app:sriv_left_top_corner_radius="0dip"
+            app:sriv_oval="true"
+            app:sriv_right_bottom_corner_radius="0dip"
+            app:sriv_right_top_corner_radius="0dip" />
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_toRightOf="@+id/person_image"
+            android:singleLine="true"
+            android:textSize="35px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/person_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/person_image"
+            android:layout_toRightOf="@+id/person_image"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:padding="15px"
+            android:src="@mipmap/ic_call" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>
